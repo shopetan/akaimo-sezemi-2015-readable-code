@@ -1,4 +1,8 @@
 ## 開発言語
 C
-### 好きな言語
-C, Swift
+
+### 実行方法  
+
+    % clang recipe.c -o recipe  
+    % ./recipe  
+    オムライス
