@@ -1,7 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("オムライス\n");
+    FILE *fname;
+    char buf[256];
+
+    fname = fopen(argv[1], "r");
+
+    if (fname == NULL) {
+        printf("%sが開けません\n", argv[1]);
+        exit(1);
+    }
+
+    while(fgets(buf, 256, fname) != NULL) {
+        printf("%s\n", buf);
+    }
+
     return 0;
 }
