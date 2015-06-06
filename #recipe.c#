@@ -12,7 +12,7 @@ int main(int argc, const char * argv[]) {
 
     /*read recipe.txt*/
     if (fname == NULL) {
-        printf("%sが開けません\n", argv[1]);
+        printf("%s縺碁幕縺代∪縺帙ｓ\n", argv[1]);
         exit(1);
     }
     
@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
     fname = fopen(argv[1],"w");
     
     if (fname == NULL) {
-        printf("%sが開けません\n", argv[1]);
+        printf("%s縺碁幕縺代∪縺帙ｓ\n", argv[1]);
         exit(1);
     }
     
