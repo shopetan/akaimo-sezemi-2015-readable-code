@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
 ここと
 
     fname = fopen(argv[1], "r");
- ```c
+ ```
 #### なぜリーダブルだと思ったか
 デフォルトでファイル名を入力させることで，逐一readしたいファイルを読み込む必要がない点．
 多様な拡張子に対応できる．
@@ -42,7 +42,7 @@ int main(int argc, const char * argv[]) {
 #### 実際のコード
 ```c
     for(recipe_count = 0; fgets(buf, 256, fname) != NULL;recipe_count++) {
- ```c
+ ```
 #### なぜリーダブルだと思ったか
 recipe数をカウントすることを明示したうえで，count = 0から始めた．
 count = 0から始めた理由として，プログラマは0番目から始まることに慣れ親しんでいるので，
