@@ -15,13 +15,6 @@ int main(int argc, const char * argv[]) {
                 recipe_hash[i][j][k] = "0";
 //    printf("recipe_hash[%d][%d] = %s\n",i,j,recipe_hash[i][j]);
     
-
-
-
-
-
-
-    
     
     fname = fopen(argv[1], "r");
 
@@ -34,7 +27,6 @@ int main(int argc, const char * argv[]) {
     for(recipe_count = 0; fgets(buf, 256, fname) != NULL; recipe_count++) {
         printf("%d\n", recipe_count);
         //recipe_hash[recipe_count][0] = recipe_count;
-        
         printf("%s", buf);
     }
     
