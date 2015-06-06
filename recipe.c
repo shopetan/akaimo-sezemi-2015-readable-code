@@ -13,8 +13,9 @@ int main(int argc, const char * argv[]) {
     }
 
     while(fgets(buf, 256, fname) != NULL) {
-        printf("%s\n", buf);
+        printf("%s", buf);
     }
+    printf("\n");
 
     return 0;
 }
